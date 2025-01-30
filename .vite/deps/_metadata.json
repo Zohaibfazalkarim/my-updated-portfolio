@@ -1,0 +1,31 @@
+{
+  "hash": "a2bed751",
+  "configHash": "34c493fe",
+  "lockfileHash": "1105ab48",
+  "browserHash": "7cdde5e6",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "f12f79e7",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "7dd73973",
+      "needsInterop": true
+    },
+    "react-lazyload": {
+      "src": "../../node_modules/react-lazyload/lib/index.js",
+      "file": "react-lazyload.js",
+      "fileHash": "3cc23f42",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "chunk-GFWMZNU4": {
+      "file": "chunk-GFWMZNU4.js"
+    }
+  }
+}
