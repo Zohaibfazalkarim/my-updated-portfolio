@@ -1,8 +1,3 @@
-// import Hero from "./components/hero/Hero";
-// import Services from "./components/services/Services";
-// import Portfolio from "./components/portfolio/Portfolio";
-// import Contact from "./components/contact/Contact";
-
 import { lazy, Suspense } from "react";
 import LazyLoad from "react-lazyload";
 
@@ -14,32 +9,39 @@ const Contact = lazy(() => import("./components/contact/Contact"));
 const App = () => {
   return (
     <div className="container">
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#home">
+      {/* Hero Section */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyLoad height={"100vh"} offset={300}>
+          <section id="home">
             <Hero />
           </section>
         </LazyLoad>
       </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#services">
+
+      {/* Services Section */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyLoad height={"100vh"} offset={300}>
+          <section id="services">
             <Services />
-          </section>{" "}
+          </section>
         </LazyLoad>
       </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"600vh"} offset={-100}>
-          {/* <section id="#portfolio"> */}
-          <Portfolio />
-          {/* </section> */}{" "}
+
+      {/* Portfolio Section */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyLoad height={"100vh"} offset={300}>
+          <section id="portfolio">
+            <Portfolio />
+          </section>
         </LazyLoad>
       </Suspense>
-      <Suspense fallback={"loading..."}>
-        <LazyLoad height={"100vh"} offset={-100}>
-          <section id="#contact">
+
+      {/* Contact Section */}
+      <Suspense fallback={<div>Loading...</div>}>
+        <LazyLoad height={"100vh"} offset={300}>
+          <section id="contact">
             <Contact />
-          </section>{" "}
+          </section>
         </LazyLoad>
       </Suspense>
     </div>
